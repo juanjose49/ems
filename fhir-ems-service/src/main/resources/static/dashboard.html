@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Organizational Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript"  src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">EMS Patient Data Platform</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a id="dashboardLink" href="#">Dashboard</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+        <a id="welcomeUser" class="navbar-brand navbar-right" href="#"></a>
+
+   </div>
+</nav>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h1 id="orgTitle">Organizational Dashboard</h1>
+        <h2>Emergencies</h2>
+        <table id="emergenciesTable" class="display">
+        <thead>
+        <tr>
+            <th>Emergency UUID</th>
+            <th>Emergency Title</th>
+            <th>Pickup Location</th>
+            <th>Emergency State</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <!-- Footer Table -->
+        <tfoot>
+        <tr>
+            <th>Emergency UUID</th>
+            <th>Emergency Title</th>
+            <th>Pickup Location</th>
+            <th>Emergency State</th>
+            <th>Action</th>
+        </tr>
+        </tfoot>
+        </table>
+        <a href="newemergency.html?id=" class="btn btn-success createEmergency" role="button">Create a new emergency</a>
+		<a href="newOrganizationalUser.html?id=" class="btn btn-success register" role="button">Create an organizational user</a>
+</div>
+
+</body>
+</html>
